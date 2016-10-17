@@ -1,0 +1,211 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+        color: white;
+    }
+
+    body {
+        background: url('odd-cutlery.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-weight: 100;
+        text-transform: uppercase;
+        padding: 24px 40px;
+    }
+
+    .terms {
+        left: 20%;
+        position: absolute;
+        color: white;
+        bottom: 10%;
+    }
+
+    .fadeIn {
+        opacity: 0;
+        /* make things invisible upon start */
+        -webkit-animation: fadeIn ease-in 1;
+        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+    }
+
+    *[data-animation-delay="1"] {
+        -webkit-animation-delay: 1.4s;
+        -moz-animation-delay: 1.4s;
+        animation-delay: 1.4s;
+    }
+
+    *[data-animation-delay="2"] {
+        -webkit-animation-delay: 1.8s;
+        -moz-animation-delay: 1.8s;
+        animation-delay: 1.8s;
+
+    }
+
+    .box-container {
+        position: absolute;;
+        width: 250px;
+        height: 95px;
+        right: 17%;
+        top: 10%;
+    }
+
+    .box-line {
+        position: absolute;
+        background: white;
+    }
+
+    .line-right,.line-left {
+      width: 5px;
+
+    }
+
+    .line-top, .line-bottom {
+      height:5px;
+    }
+
+    .line-top {
+      top: 0;
+      left: 0;
+      animation-delay: 0s !important;
+    }
+    .line-right {
+      right: 0;
+      top: 0;
+      animation-delay: 0.4s !important;
+    }
+
+    .line-bottom {
+      bottom: 0;
+      right: 0;
+      animation-delay: 0.8s !important;
+    }
+    .line-left {
+      bottom: 0;
+      animation-delay: 1.2s !important;
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    @-webkit-keyframes animateWidth {
+          from {
+              width: 0;
+          }
+          to {
+              width: 100%;
+          }
+    }
+    @-moz-keyframes animateWidth {
+          from {
+              width: 0;
+          }
+          to {
+              width: 100%;
+          }
+    }
+    @keyframes animateWidth {
+          from {
+              width: 0;
+          }
+          to {
+              width: 100%;
+          }
+    }
+
+    @-webkit-keyframes animateHeight {
+          from {
+              height: 0;
+          }
+          to {
+              height: 100%;
+          }
+    }
+    @-moz-keyframes animateHeight {
+          from {
+              height: 0;
+          }
+          to {
+              height: 100%;
+          }
+    }
+    @keyframes animateHeight {
+          from {
+              height: 0;
+          }
+          to {
+              height: 100%;
+          }
+    }
+
+
+.animateHeight {
+    animation: animateHeight ease-in-out 1;
+    -webkit-animation: animateHeight ease-in-out 1;
+    -moz-animation: animateHeight ease-in-out 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+.animateWidth {
+    animation: animateWidth ease-in-out 1;
+    -webkit-animation: animateWidth ease-in-out 1;
+    -moz-animation: animateWidth ease-in-out 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
